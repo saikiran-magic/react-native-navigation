@@ -502,14 +502,14 @@ NSString const *CALLBACK_ASSOCIATED_ID = @"RCCNavigationController.CALLBACK_ASSO
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    if (_transitioning) {
-        NSDictionary *pushDetails =@{ @"viewController": viewController, @"animated": @(animated) };
-        [_queuedViewControllers addObject:pushDetails];
+//     if (_transitioning) {
+//         NSDictionary *pushDetails =@{ @"viewController": viewController, @"animated": @(animated) };
+//         [_queuedViewControllers addObject:pushDetails];
         
-        return;
-    }
+//         return;
+//     }
     
-    _transitioning = YES;
+//     _transitioning = YES;
     
     [super pushViewController:viewController animated:animated];
 }
